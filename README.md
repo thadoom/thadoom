@@ -1,6 +1,12 @@
-<picture><source media="(min-width: 1012px)" srcset="assets/hero.svg"><img src="assets/hero-m.svg" width="100%" alt="Dominik, thaDoom. Full-stack web developer, self-taught, Veneto, Italy. Available now. Figure 1 maps 2026 day by day: Call-centre CRM, 21 commits from 17 Feb to 2 Apr; Company website rebuild, 53 commits from 2 Mar to 8 Apr; Market-stall stock app, 19 commits from 14 Jun to 29 Oct; Game community platform, 81 commits from 19 Oct to 6 Nov; Ombra, 9 releases from 5 Nov to 14 Nov. 9 releases shipped in 10 days. 475 automated tests all passing. 44 API routes on Postgres + Redis. 2 real businesses I built for."></picture>
+<picture><source media="(min-width: 1012px)" srcset="assets/header.svg"><img src="assets/header-m.svg" width="100%" alt="Hi, I'm Dominik (thaDoom). Full-stack web developer, self-taught, Veneto, Italy, on site or remote. Available now. From an empty folder to people using it. 475 tests green before the last deploy. 9 releases shipped in 10 days. Looking for a junior full-stack role. A 3D chart of the last year shows 45 days with a push out of 366."></picture>
 
-I'm Dominik. I take web products from an empty folder to people using them, and I'm looking for a junior full-stack role where the people around me know more than I do. On site in Veneto or remote. I can start now: [thadoom@icloud.com](mailto:thadoom@icloud.com).
+I take web products from an empty folder to people using them, and I'm looking for a junior full-stack role where the people around me know more than I do. On site in Veneto or remote. I can start now: [thadoom@icloud.com](mailto:thadoom@icloud.com).
+
+<picture><source media="(min-width: 1012px)" srcset="assets/stats.svg"><img src="assets/stats-m.svg" width="100%" alt="Most used languages by bytes across 23 repos: JavaScript 30.7%, TypeScript 25.5%, Rust 18.9%, HTML 7.9%, CSS 7.5%, C++ 4.8%, Other 4.7%. 2026 so far: 174 commits on 4 projects, 9 releases shipped, 475 tests green, 44 API routes. Repos: 6 public, 17 private."></picture>
+
+<picture><source media="(min-width: 1012px)" srcset="assets/stack.svg"><img src="assets/stack-m.svg" width="100%" alt="Stack, only what is in the repos: TypeScript, JavaScript, React, Next.js, Tailwind CSS, Node.js, PostgreSQL, Redis, Firebase, Cloudflare Workers, Rust, C++, Python, GitHub Actions, Vitest, Ubuntu."></picture>
+
+Also in the repos: Zustand, Motion, three.js, D1, Server-Sent Events, node:test, ESLint, Wrangler, Direct2D, a SteamVR driver, and a Linux server I run myself.
 
 ## Five things I built in 2026
 
@@ -97,10 +103,6 @@ My part is everything around the typing: deciding what to build and what to cut,
 Nothing reaches production on the game platform with a failing test. When I'm wrong I change course, and the ban rules in drawer 02 are one example. I don't like wasting time either: nine releases in ten days, 81 commits in nineteen.
 
 What I want next is a team that reviews my code hard, and people better than me to learn from. I want this to be my job.
-
-## Stack
-
-<picture><source media="(min-width: 1012px)" srcset="assets/stack.svg"><img src="assets/stack-m.svg" width="100%" alt="Stack, only what is in the repos. Front end: TypeScript, React 19, Next.js 16, Tailwind CSS 4, Zustand, Motion, three.js. Back end: Node.js, PostgreSQL, Redis, Firebase, Cloudflare Workers + D1, Server-Sent Events. Shipping: GitHub Actions, Vitest, node:test, ESLint, Wrangler, PWA + service workers. Systems: Rust, C++, Direct2D, SteamVR driver, Python for tooling. Ops: A Linux server I run myself, Ubuntu 24.04."></picture>
 
 ## Contact
 
