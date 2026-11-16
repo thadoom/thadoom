@@ -111,7 +111,7 @@ A rebuild of the public website of the same consulting firm.
 
 </details>
 
-Also public: [Schedule Maker](https://github.com/thadoom/njschedule), a small static tool that exports a weekly schedule as a 1920×1080 PNG. Plain JavaScript, no build step.
+Also public: [Schedule Maker](https://github.com/thadoom/njschedule), which I built for a streamer. It exports the weekly schedule as a 1920×1080 PNG. Plain JavaScript, no build step.
 
 ## How I got here
 
