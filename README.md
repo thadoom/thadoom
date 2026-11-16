@@ -10,14 +10,17 @@ Also in the repos: Zustand, Motion, three.js, D1, Server-Sent Events, node:test,
 
 ## Five things I built in 2026
 
-Click a bar to open it. One opens at a time, and inside each there is the product running as a small demo drawn in SVG, then the stack and the numbers. Most of this code is private: it holds client data, or it is closed source by choice. I'm glad to open the real thing on a call and walk through it.
+Click a card. It opens, the others close, and the demo inside is the product at work, drawn in SVG. Most of this code is private: it holds client data, or it is closed source by choice. I'm glad to open the real thing on a call and walk through it.
 
 <details name="work" open>
-<summary>01 of 05 · open Ombra<br><picture><source media="(min-width: 1012px)" srcset="assets/ombra-front.svg"><img src="assets/ombra-front-m.svg" width="100%" alt="Ombra. Windows app + SteamVR driver, public releases."></picture></summary>
+<summary><picture><source media="(min-width: 1012px)" srcset="assets/ombra-card.svg"><img src="assets/ombra-card-m.svg" width="94%" align="middle" alt="Ombra. Free Windows app: body trackers in, full-body tracking in SteamVR out. Public releases."></picture></summary>
 
-<a href="https://github.com/thadoom/ombra"><picture><source media="(min-width: 1012px)" srcset="assets/ombra.svg"><img src="assets/ombra-m.svg" width="100%" alt="Animated demo of Ombra: the tracker signal, before and after the filter. Built with Rust, C++, Direct2D, SteamVR."></picture></a>
+<picture><img src="assets/gap.svg" width="17" height="1" alt=""></picture><picture><source media="(min-width: 1012px)" srcset="assets/ombra.svg"><img src="assets/ombra-m.svg" width="94%" align="top" alt="Animated demo of Ombra: the tracker signal, before and after the filter. 250 Hz body model, 65k lines of Rust, 292 unit tests, 9 releases in 10 days. Built with Rust, C++, Direct2D, SteamVR."></picture>
 
 A free Windows app that turns IMU body trackers into full-body tracking in SteamVR. It replaces the vendor's own desktop software.
+
+<details>
+<summary>The details</summary>
 
 - The app is native Rust with a Direct2D window, so there is no browser engine inside. A C++ driver runs in SteamVR and the two talk over shared memory.
 - It reads the trackers from their USB dongles, builds the body 250 times a second, smooths it with an adaptive One Euro filter and corrects drift while you move.
@@ -28,12 +31,17 @@ A free Windows app that turns IMU body trackers into full-body tracking in Steam
 
 </details>
 
-<details name="work">
-<summary>02 of 05 · open Game community platform<br><picture><source media="(min-width: 1012px)" srcset="assets/platform-front.svg"><img src="assets/platform-front-m.svg" width="100%" alt="Game community platform. Next.js site + Cloudflare Worker API, private · live."></picture></summary>
+</details>
 
-<picture><source media="(min-width: 1012px)" srcset="assets/platform.svg"><img src="assets/platform-m.svg" width="100%" alt="Animated demo of Game community platform: one push to main. Built with Next.js 16, three.js, Cloudflare Workers, D1, GitHub Actions."></picture>
+<details name="work">
+<summary><picture><source media="(min-width: 1012px)" srcset="assets/platform-card.svg"><img src="assets/platform-card-m.svg" width="94%" align="middle" alt="Game community platform. Site and backend of a fan-made online game. It is live. Private · live."></picture></summary>
+
+<picture><img src="assets/gap.svg" width="17" height="1" alt=""></picture><picture><source media="(min-width: 1012px)" srcset="assets/platform.svg"><img src="assets/platform-m.svg" width="94%" align="top" alt="Animated demo of Game community platform: one push to main. 475 tests, all green, 15 database migrations, 0 runtime deps in the API, 81 commits in 19 days. Built with Next.js 16, three.js, Cloudflare Workers, D1, GitHub Actions."></picture>
 
 The website and backend of a free, fan-made online game: accounts, leaderboards, news, a moderated media gallery, bans and appeals.
+
+<details>
+<summary>The details</summary>
 
 - The site is a Next.js 16 static export with 3D scenes in three.js.
 - The API is one Cloudflare Worker with no runtime dependencies. It has a D1 (SQLite) database with 15 migrations, cron jobs, per-IP rate limits and Discord sign-in.
@@ -44,12 +52,17 @@ A mistake I fixed: my first automatic ban rules flagged legitimate players. I sw
 
 </details>
 
-<details name="work">
-<summary>03 of 05 · open Call-centre CRM<br><picture><source media="(min-width: 1012px)" srcset="assets/crm-front.svg"><img src="assets/crm-front-m.svg" width="100%" alt="Call-centre CRM. Built for a company, private."></picture></summary>
+</details>
 
-<picture><source media="(min-width: 1012px)" srcset="assets/crm.svg"><img src="assets/crm-m.svg" width="100%" alt="Animated demo of Call-centre CRM: a lead moves across the board. Built with Next.js 16, React 19, PostgreSQL, Redis, SSE."></picture>
+<details name="work">
+<summary><picture><source media="(min-width: 1012px)" srcset="assets/crm-card.svg"><img src="assets/crm-card-m.svg" width="94%" align="middle" alt="Call-centre CRM. Call-centre CRM for a consulting firm: claim, call, book, all live. Private."></picture></summary>
+
+<picture><img src="assets/gap.svg" width="17" height="1" alt=""></picture><picture><source media="(min-width: 1012px)" srcset="assets/crm.svg"><img src="assets/crm-m.svg" width="94%" align="top" alt="Animated demo of Call-centre CRM: a lead moves across the board. 44 API routes, 16 SQL tables, SSE live presence, 21 commits. Built with Next.js 16, React 19, PostgreSQL, Redis, SSE."></picture>
 
 Built for the call-centre team of a consulting firm in Northern Italy. Operators claim the companies they will call, log the outcome and book appointments. Admins see the whole floor live.
+
+<details>
+<summary>The details</summary>
 
 - 44 API routes on Next.js 16, PostgreSQL through hand-written SQL (16 tables) and a Redis cache.
 - Live updates over Server-Sent Events: who is online, who claimed which company.
@@ -59,12 +72,17 @@ Built for the call-centre team of a consulting firm in Northern Italy. Operators
 
 </details>
 
-<details name="work">
-<summary>04 of 05 · open Market-stall stock app<br><picture><source media="(min-width: 1012px)" srcset="assets/stock-front.svg"><img src="assets/stock-front-m.svg" width="100%" alt="Market-stall stock app. Offline-ready PWA, private · in real use."></picture></summary>
+</details>
 
-<picture><source media="(min-width: 1012px)" srcset="assets/stock.svg"><img src="assets/stock-m.svg" width="100%" alt="Animated demo of Market-stall stock app: stock runs low, every phone hears about it. Built with Next.js 16, Firebase, Zustand, Web Push, Vitest."></picture>
+<details name="work">
+<summary><picture><source media="(min-width: 1012px)" srcset="assets/stock-card.svg"><img src="assets/stock-card-m.svg" width="94%" align="middle" alt="Market-stall stock app. Phone-first PWA that tracks stock at a street-market stall. Private · in real use."></picture></summary>
+
+<picture><img src="assets/gap.svg" width="17" height="1" alt=""></picture><picture><source media="(min-width: 1012px)" srcset="assets/stock.svg"><img src="assets/stock-m.svg" width="94%" align="top" alt="Animated demo of Market-stall stock app: stock runs low, every phone hears about it. Offline service worker cache, Push on every deploy, 2 roles in the rules, 19 commits. Built with Next.js 16, Firebase, Zustand, Web Push, Vitest."></picture>
 
 A phone-first PWA that tracks warehouse stock and what is on display at a street-market sweets stall. The staff use it at the stall.
+
+<details>
+<summary>The details</summary>
 
 - Next.js 16, React 19, Tailwind CSS 4 and Zustand, on Firestore with security rules and real-time sync.
 - It installs on the phone. A service worker caches the app and shows an offline screen when the signal drops.
@@ -73,16 +91,23 @@ A phone-first PWA that tracks warehouse stock and what is on display at a street
 
 </details>
 
-<details name="work">
-<summary>05 of 05 · open Company website rebuild<br><picture><source media="(min-width: 1012px)" srcset="assets/website-front.svg"><img src="assets/website-front-m.svg" width="100%" alt="Company website rebuild. Static site + SEO, private."></picture></summary>
+</details>
 
-<picture><source media="(min-width: 1012px)" srcset="assets/website.svg"><img src="assets/website-m.svg" width="100%" alt="Animated demo of Company website rebuild: the page comes together, the script ships it. Built with Next.js 16, Tailwind CSS 4, Motion."></picture>
+<details name="work">
+<summary><picture><source media="(min-width: 1012px)" srcset="assets/website-card.svg"><img src="assets/website-card-m.svg" width="94%" align="middle" alt="Company website rebuild. The same firm's public site, rebuilt from an SEO audit. Private."></picture></summary>
+
+<picture><img src="assets/gap.svg" width="17" height="1" alt=""></picture><picture><source media="(min-width: 1012px)" srcset="assets/website.svg"><img src="assets/website-m.svg" width="94%" align="top" alt="Animated demo of Company website rebuild: the page comes together, the script ships it. 53 commits, SEO audit kept in the repo, FTP deploy with a dry run, JSON-LD structured data. Built with Next.js 16, Tailwind CSS 4, Motion."></picture>
 
 A rebuild of the public website of the same consulting firm.
+
+<details>
+<summary>The details</summary>
 
 - It started from an SEO audit that is kept in the repo. Then came structured data, sitemap, robots rules and cookie consent.
 - One deploy script builds the site and uploads it over FTP. It has a dry-run mode.
 - 53 commits, March to April 2026.
+
+</details>
 
 </details>
 
@@ -100,7 +125,7 @@ I build with AI coding agents every day. Ombra and the game platform would not e
 
 My part is everything around the typing: deciding what to build and what to cut, writing the spec, testing on real hardware and with real users, chasing the bug, shipping the release, answering the people who use it.
 
-Nothing reaches production on the game platform with a failing test. When I'm wrong I change course, and the ban rules in drawer 02 are one example. I don't like wasting time either: nine releases in ten days, 81 commits in nineteen.
+Nothing reaches production on the game platform with a failing test. When I'm wrong I change course, and the ban rules in card 02 are one example. I don't like wasting time either: nine releases in ten days, 81 commits in nineteen.
 
 What I want next is a team that reviews my code hard, and people better than me to learn from. I want this to be my job.
 
